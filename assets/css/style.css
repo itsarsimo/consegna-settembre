@@ -5,12 +5,24 @@
     margin: 0;
 }
 
+.list-horizontal li {
+    display: inline-block;
+}
+
 .text-center {
     text-align: center;
 }
 
 .bkg-green {
     background-color: #c9d4be !important;
+}
+
+.text-decoration-none a {
+    text-decoration: none;
+}
+
+.color-black {
+    color: #000000;
 }
 /* END - Utility classes */
 
@@ -35,7 +47,7 @@
 
 .open-menu .main-menu .main-nav ul {
     text-align: center;
-    background-color: #c9a88f;
+    background-color: #e3e3e3;
     text-align: center;
 }
 
@@ -79,7 +91,7 @@
     margin: 0;
     padding: 0;
     background-color: transparent;
-/*  Trovare un modo per altezza 100%   
+/*  Trovare un modo per altezza 100%
     height: 100%; */
 }
 
@@ -106,13 +118,13 @@
 /* END - btn */
 .hero {
     position: relative;
-    height: 85vh; /* 
-        75% dell'altezza della viewport 
-        viewport significa dal pixel sinistro più alto a al pixel destro più basso 
+    height: 85vh; /*
+        75% dell'altezza della viewport
+        viewport significa dal pixel sinistro più alto a al pixel destro più basso
             della nostra pagina web, senza contare l'interfaccia del browser
     */
 
-    
+
     background-color: #000;
 
     -webkit-box-align: center;
@@ -211,6 +223,7 @@
 
 .container {
     padding: .25em 1em;
+    /* background-color: #ffffff; */
 }
 
 .avatar {
@@ -242,6 +255,68 @@
     margin-bottom: .5em;
 }
 
+[class*="card-box"] {
+    background-color: #fff;
+}
+
+
+.site-footer {
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background-color: #fff;
+    color: white;
+    position: relative;
+}
+
+.site-footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.site-logo-img {
+    display: block;
+    max-width: 3.25em;
+}
+
+.site-footer-content > *:not(:last-child) {
+    margin: 0 0 1em;
+}
+
+.site-footer-content ul li:nth-child(n+2)  {
+    position: relative;
+    margin-left: 2em;
+}
+
+.site-footer-content ul li:nth-child(n+2)::before {
+    content: '•';
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+    bottom: 1em;
+    margin: auto;
+    display: inline-block;
+    height: 5px;
+    color: #000;
+}
+
+.site-footer-content ul li {
+    margin-top: 1.5em;
+}
+
+.site-footer-content ul li:hover {
+    color: rgb(133, 40, 22);
+}
 /* [class|="col"] {
 
 } */
@@ -269,7 +344,7 @@
     }
 
     /* START - btn */
-    /* Questo non serve se lo faccio già sul div 
+    /* Questo non serve se lo faccio già sul div
     .btn-open-menu {
         display: none;
     } */
@@ -277,7 +352,7 @@
     /* Questo è un div in realtà */
     .hamburger-button {
         display: none;
-       
+
     }
 
     .btn-wrapper {
