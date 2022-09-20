@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .main-nav {
@@ -164,6 +164,7 @@
 }
 
 .main-section {
+    padding: 4em 0;
     background-color: transparent;
 }
 
@@ -247,7 +248,7 @@
 }
 
 .main-section-header {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .main-section-header h3 {
@@ -324,6 +325,17 @@
 
 /* START - responsive */
 @media screen and (min-width: 960px) {
+    .main-menu {
+        /*
+        top 0 per posizionarsi in alto
+        width 100 per dirgli di occupare tutto lo spazio, in position fixed occuperebbe tutto lo spazio dei contenuti
+        */
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        width: 100%;
+    }
+
     .main-nav {
         display: block;
         flex: 50%;
@@ -338,10 +350,10 @@
         margin: 0 1em 0 0;
     }
 
-    .logo-wrapper{
+    /* .logo-wrapper{
         width: auto;
         background-color: transparent;
-    }
+    } */
 
     /* START - btn */
     /* Questo non serve se lo faccio già sul div
