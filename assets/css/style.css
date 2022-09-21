@@ -175,6 +175,14 @@
     height: 80%;
 }
 
+/* .container-carousel img {
+    transition: transform .3s ease-in-out;
+} */
+
+.container-carousel:hover img {
+    transform: scale(1.5);
+}
+
 .image-carousel {
     display: none;
     width: 100%;
@@ -236,9 +244,9 @@
     object-fit: cover;
 }
 
-.main-section-card-grid {
-    margin: 0 -1em;
-}
+/* .main-section-card-grid {
+    
+} */
 
 .main-section-card-grid .card-box {
     margin: 1em;
