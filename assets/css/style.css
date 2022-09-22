@@ -145,6 +145,12 @@ body {
     opacity: .5;
 }
 
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
 .image-cover {
     position: absolute;
     top: 0;
@@ -214,11 +220,11 @@ body {
     text-align: center;
     padding: 0.5em 1em;
     color: #fff !important;
-    background-color: #000 !important;
+    background-color: rgb(16, 92, 20) !important;
 }
 
 .slider-button:hover {
-    background-color: rgb(103, 103, 103) !important;
+    background-color: rgb(93, 133, 95) !important;
 }
 
 
@@ -233,16 +239,20 @@ body {
 }
 
 .card-content {
-    margin: .5em 1em;
-    /* background-color: #ffffff; */
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    padding: 1em;
+    margin: 0;
+    width: calc(100% - 2em);
 }
 
 .card-content h4 {
-    margin-bottom: 0;
+    margin: 0 0 0.5em;
 }
 
 .card-content p {
-    margin-top: 0;
+    margin: 0;
 }
 
 .avatar {
@@ -264,7 +274,7 @@ body {
 }
 
 .card-box:hover img, .card-box-small:hover img {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /* .main-section-card-grid {
