@@ -178,9 +178,13 @@
 .image-carousel {
     display: none;
     width: 100%;
-    height: 100%;
+    height: 30em;
     -o-object-fit: contain;
        object-fit: contain;
+}
+
+.button-carousel {
+    position: relative;
 }
 
 .slider-button {
@@ -192,24 +196,23 @@
     color: #fff !important;
     background-color: #000 !important;
 }
+
 .slider-button:hover {
     background-color: rgb(103, 103, 103) !important;
 }
 
 .slider-button-right{
-    position:absolute;
-    top:50%;
-    right:0%;
-    transform:translate(0%,-50%);
-    -ms-transform:translate(0%,-50%)
+    position: absolute;
+    right: 0;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%)
 }
 
 .slider-button-left {
-    position:absolute;
-    top:50%;
-    left:0%;
-    transform:translate(0%,-50%);
-    -ms-transform:translate(-0%,-50%)
+    position: absolute;
+    left: 0;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%)
 }
 
 .card-box {

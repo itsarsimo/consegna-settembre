@@ -1,94 +1,98 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header class="main-menu">
-        <div class="logo-wrapper">
-            <a href="index.html" title="Vai alla index">
-                <img src="assets/images/logo.png" alt="Logo" class="logo">
-            </a>
-        </div>
-        <nav class="main-nav">
-            <ul class="list-nav list-reset">
-                <li>
-                    <a href="index.html" title="Home">Home</a>
-                </li>
-                <li>
-                    <a href="#" title="Chi sono">Chi sono</a>
-                </li>
-                <li>
-                    <a href="#" title="Contatti">Contatti</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="btn-wrapper">
-            <button class="hamburger-button" id="hamburgerBtn" type="button">
-                <div class="hamburger-button-bar"></div>
-                <div class="hamburger-button-bar"></div>
-                <div class="hamburger-button-bar"></div>
-            </button>
-        </div>
-    </header>
-
-    <main class="site-main">
-        <div class="hero grid">
-            <img src="assets/images/main-image.jpg" alt="Sfondo" class="hero-image image-cover">
-        </div>
-
-        <div class="main-section hero">
-            <div class="main-section-header">
-                <h2 class="text-center">Slider immagini</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header class="main-menu">
+            <div class="logo-wrapper">
+                <a href="index.html" title="Vai alla index">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo">
+                </a>
             </div>
-            <div class="col-md-6 col-lg-4 container-carousel">
-                <img src="assets/images/amos-gwa-IrGYJPF0JS0-unsplash.jpg" alt="" class="image-carousel">
-                <img src="assets/images/deric-P3DxOe-OJGA-unsplash.jpg" alt="" class="image-carousel">
-                <img src="assets/images/france-perles-wizj0ppghD0-unsplash.jpg" alt="" class="image-carousel">
-                <img src="assets/images/steven-kamenar-MMJx78V7xS8-unsplash.jpg" alt="" class="image-carousel">
+            <nav class="main-nav">
+                <ul class="list-nav list-reset">
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Chi sono">Chi sono</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Contatti">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-wrapper">
+                <button class="hamburger-button" id="hamburgerBtn" type="button">
+                    <div class="hamburger-button-bar"></div>
+                    <div class="hamburger-button-bar"></div>
+                    <div class="hamburger-button-bar"></div>
+                </button>
             </div>
-            <button class="slider-button slider-button-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="slider-button slider-button-right" onclick="plusDivs(1)">&#10095;</button>
-        </div>
+        </header>
 
-        <div class="main-section bkg-green">
-            <div class="offset-md-1 col-md-10">
+        <main class="site-main">
+            <div class="hero grid">
+                <img src="assets/images/main-image.jpg" alt="Sfondo" class="hero-image image-cover">
+            </div>
+
+            <div class="main-section">
                 <div class="main-section-header">
-                    <h2 class="text-center">Card section</h2>
+                    <h2 class="text-center">Slider immagini</h2>
                 </div>
-                <div class="main-section-card-grid">
-                    <div class="card-box card-box-small">
-                        <img src="assets/images/main-image.jpg" alt="Avatar" class="avatar">
-                        <div class="card-content">
-                            <h4><b>Foto 1</b></h4> 
-                            <p>Prova 1</p> 
-                        </div>
-                    </div>
+                <div class="col-md-6 col-lg-4 container-carousel">
+                    <img src="assets/images/amos-gwa-IrGYJPF0JS0-unsplash.jpg" alt="" class="image-carousel">
+                    <img src="assets/images/deric-P3DxOe-OJGA-unsplash.jpg" alt="" class="image-carousel">
+                    <img src="assets/images/france-perles-wizj0ppghD0-unsplash.jpg" alt="" class="image-carousel">
+                    <img src="assets/images/steven-kamenar-MMJx78V7xS8-unsplash.jpg" alt="" class="image-carousel">
+                </div>
+                <div class="button-carousel">
+                    <button class="slider-button slider-button-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="slider-button slider-button-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </div>
 
-                    <div class="card-box card-box-small">
-                        <img src="assets/images/deric-P3DxOe-OJGA-unsplash.jpg" alt="Avatar" class="avatar">
-                        <div class="card-content">
-                            <h4><b>Foto 2</b></h4> 
-                            <p>Prova 2</p> 
-                        </div>
+            <div class="main-section bkg-green">
+                <div class="offset-md-1 col-md-10">
+                    <div class="main-section-header">
+                        <h2 class="text-center">Card section</h2>
                     </div>
+                    <div class="main-section-card-grid">
+                        <div class="card-box card-box-small">
+                            <img src="assets/images/main-image.jpg" alt="Avatar" class="avatar">
+                            <div class="card-content">
+                                <h4><b>Foto 1</b></h4> 
+                                <p>Prova 1</p> 
+                            </div>
+                        </div>
 
-                    <div class="card-box card-box-small">
-                        <img src="assets/images/amos-gwa-IrGYJPF0JS0-unsplash.jpg" alt="Avatar" class="avatar">
-                        <div class="card-content">
-                            <h4><b>Foto 3</b></h4> 
-                            <p>Prova 3</p> 
+                        <div class="card-box card-box-small">
+                            <img src="assets/images/deric-P3DxOe-OJGA-unsplash.jpg" alt="Avatar" class="avatar">
+                            <div class="card-content">
+                                <h4><b>Foto 2</b></h4> 
+                                <p>Prova 2</p> 
+                            </div>
+                        </div>
+
+                        <div class="card-box card-box-small">
+                            <img src="assets/images/amos-gwa-IrGYJPF0JS0-unsplash.jpg" alt="Avatar" class="avatar">
+                            <div class="card-content">
+                                <h4><b>Foto 3</b></h4> 
+                                <p>Prova 3</p> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+        </main>
 
         <footer class="site-footer grid">
             <div class="offset-md-1 col-md-10">
@@ -98,16 +102,16 @@
                     </a>
 
                     <ul class="list-reset list-horizontal text-decoration-none">
-						<li>
-							<a href="#" title="Facebook" class="color-black">Facebook</a>
-						</li>
-						<li>
-							<a href="#" title="Instagram" class="color-black">Instagram</a>
-						</li>
-						<li>
-							<a href="#" title="Linkedin" class="color-black">Linkedin</a>
-						</li>
-					</ul>
+                        <li>
+                            <a href="#" title="Facebook" class="color-black">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Instagram" class="color-black">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Linkedin" class="color-black">Linkedin</a>
+                        </li>
+                    </ul>
 
                     <div class="color-black text-decoration-none">
                         <a href="#" class="color-black">Privacy</a>
@@ -117,7 +121,7 @@
                 </div>
             </div>
         </footer>
-    </main>
-    <script src="assets/js/script.js"></script>
-</body>
+        
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
