@@ -29,6 +29,14 @@ body {
 .color-black {
     color: #000000;
 }
+
+.color-white {
+    color: #ffffff;
+}
+
+.bkg-black {
+    background-color: #000000;
+}
 /* END - Utility classes */
 
 /* START - main menu e main nav */
@@ -161,6 +169,10 @@ body {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+}
+
+.image-footer {
+    opacity: .3;
 }
 
 .grid,
@@ -310,6 +322,10 @@ body {
     position: relative;
 }
 
+.site-footer > div {
+    position: relative;
+}
+
 .site-footer-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -359,6 +375,10 @@ body {
 .site-footer-content ul li:hover {
     color: rgb(133, 40, 22);
 }
+
+[class*="icon"] {
+    font-size: 1.5em;
+}
 /* [class|="col"] {
 
 } */
@@ -394,6 +414,14 @@ body {
 
     .container-carousel {
         width: 50%;
+    }
+
+    .site-logo-img {
+        max-width: 10em;
+    }
+
+    [class*="icon"] {
+        font-size: 2em;
     }
 
     /* .logo-wrapper{
