@@ -1,3 +1,8 @@
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 /* START - Utility classes */
 .list-reset {
     list-style-type: none;
