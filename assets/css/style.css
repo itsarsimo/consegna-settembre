@@ -171,7 +171,7 @@
 .container-carousel {
     position: relative;
     margin: auto;
-    width: 50%;
+    width: 80%;
     height: 80%;
 }
 
@@ -183,8 +183,21 @@
        object-fit: contain;
 }
 
-.button-carousel {
+.carousel-wrapper {
     position: relative;
+    margin: 0 0;
+}
+
+.button-carousel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .slider-button {
@@ -201,19 +214,6 @@
     background-color: rgb(103, 103, 103) !important;
 }
 
-.slider-button-right{
-    position: absolute;
-    right: 0;
-    transform: translate(0%,-50%);
-    -ms-transform: translate(0%,-50%)
-}
-
-.slider-button-left {
-    position: absolute;
-    left: 0;
-    transform: translate(0%,-50%);
-    -ms-transform: translate(-0%,-50%)
-}
 
 .card-box {
     display: inline-block;
@@ -372,6 +372,10 @@
 
     .main-nav ul li:not(:last-child) {
         margin: 0 1em 0 0;
+    }
+
+    .container-carousel {
+        width: 50%;
     }
 
     /* .logo-wrapper{
