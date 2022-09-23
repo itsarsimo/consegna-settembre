@@ -19,7 +19,7 @@ body {
 }
 
 .bkg-green {
-    background-color: #c9d4be !important;
+    background-color: rgba(197, 213, 196, .5) !important;
 }
 
 .text-decoration-none a {
@@ -45,7 +45,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(203, 228, 214, .8);
 }
 
 .main-nav {
@@ -232,11 +232,13 @@ body {
     text-align: center;
     padding: 0.5em 1em;
     color: #fff !important;
-    background-color: rgb(16, 92, 20) !important;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: #2C4C40 !important;
 }
 
 .slider-button:hover {
-    background-color: rgb(93, 133, 95) !important;
+    background-color: #29675B !important;
 }
 
 
@@ -358,18 +360,20 @@ body {
 
 .site-footer-content ul li:nth-child(n+2)::before {
     content: '•';
+    font-size: 4em;
     position: absolute;
-    top: 0;
-    left: -1.5em;
-    bottom: 1em;
+    top: -50px;
+    left: -27px;
+    bottom: 25px;
     margin: auto;
     display: inline-block;
     height: 5px;
-    color: #000;
+    color: #43481D;
 }
 
 .site-footer-content ul li {
-    margin-top: .5em;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
 }
 
 .site-footer-content ul li:hover {
@@ -378,6 +382,16 @@ body {
 
 [class*="icon"] {
     font-size: 1.5em;
+}
+
+.icon-border {
+    background-color: #2C4C40;
+    border-radius: 50%;
+    border: 2px solid #2C4C40;
+} 
+
+.icon-border:hover {
+    background-color: #29675B;
 }
 /* [class|="col"] {
 
