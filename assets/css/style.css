@@ -259,14 +259,12 @@ body {
     padding: 1em;
     margin: 0;
     width: calc(100% - 2em);
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-content h4 {
     margin: 0 0 0.5em;
-}
-
-.card-content p {
-    margin: 0;
 }
 
 .avatar {
@@ -276,6 +274,10 @@ body {
     height: 15em;
     overflow: hidden;
     object-fit: cover;
+}
+
+.learn-more {
+    /* display: flex; */
 }
 
 .card-box, .card-box-small {
