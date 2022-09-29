@@ -24,3 +24,15 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+// let card = document.querySelector('.card-box-small');
+
+// card.addEventListener('click', function() {
+  
+//   if(card.classList.contains('active')) { 
+//     card.classList.remove('active');
+//   }
+//   else {
+//     card.classList.add('active');
+//   }
+// });
