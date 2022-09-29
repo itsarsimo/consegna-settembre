@@ -1,14 +1,170 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mountain Trips</title>
+
+        <!-- Font -->
+        <link rel="stylesheet" href="assets/fonts/montserrat/stylesheet.css">
+
+        <!-- Iconfont -->
+        <link rel="stylesheet" href="assets/fonts/iconfont/css/fontello.css">
+
+        <!-- Fogli di stile -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+        <!-- Commentato perchè dava problemi -->
+        <!-- <link rel="manifest" href="/manifest.json"> -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header class="main-menu">
+            <div class="logo-wrapper">
+                <a href="index.html" title="Vai alla index">
+                    <img src="assets/images/logo_mountain_trips.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="list-nav list-reset">
+                    <li>
+                        <a href="index.html" title="Home"><strong>Home</strong></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Chi sono"><strong>Chi siamo</strong></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Contatti"><strong>Contatti</strong></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-wrapper">
+                <button class="hamburger-button" id="hamburgerBtn" type="button">
+                    <div class="hamburger-button-bar"></div>
+                    <div class="hamburger-button-bar"></div>
+                    <div class="hamburger-button-bar"></div>
+                </button>
+            </div>
+        </header>
+
+        <main class="site-main">
+            <div class="hero grid">
+                <img src="assets/images/main-image.jpg" alt="Sfondo" class="hero-image image-cover">
+
+                <!-- <div class="offset-2 col-lg-10">
+                    <form class="example" action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div> -->
+                <div class="offset-2 col-lg-10">
+                    <div class="hero-content">
+                        <h1>Mountain trips</h1>
+						<p>Un nuovo modo di <strong>viaggiare</strong>.
+                            <br>Scopri con noi paesaggi mozzafiato.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section">
+                <div class="main-section-header">
+                    <h2 class="text-center">Alcuni scatti dai nostri viaggi...</h2>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="container-carousel">
+                        <img src="assets/images/amos-gwa-IrGYJPF0JS0-unsplash.jpg" alt="" class="image-carousel">
+                        <img src="assets/images/deric-P3DxOe-OJGA-unsplash.jpg" alt="" class="image-carousel">
+                        <img src="assets/images/france-perles-wizj0ppghD0-unsplash.jpg" alt="" class="image-carousel">
+                        <img src="assets/images/steven-kamenar-MMJx78V7xS8-unsplash.jpg" alt="" class="image-carousel">
+                    </div>
+                    <div class="button-carousel">
+                        <button class="slider-button" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="slider-button" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section bkg-green">
+                <div class="offset-md-1 col-md-10">
+                    <div class="main-section-header">
+                        <h2 class="text-center">Viaggi in programma</h2>
+                    </div>
+                    <div class="main-section-card-grid">
+                        <div class="card-box card-box-small">
+                            <img src="assets/images/main-image.jpg" alt="Avatar" class="avatar">
+                            <div class="card-content">
+                                <h3><b>Foto 1</b></h3> 
+                                <button class="learn-more">Scopri di più</button>
+                            </div>
+                        </div>
+
+                        <div class="card-box card-box-small">
+                            <img src="assets/images/deric-P3DxOe-OJGA-unsplash.jpg" alt="Avatar" class="avatar">
+                            <div class="card-content">
+                                <h3><b>Foto 2</b></h3> 
+                                <button class="learn-more">Scopri di più</button>
+                            </div>
+                        </div>
+
+                        <div class="card-box card-box-small">
+                            <img src="assets/images/amos-gwa-IrGYJPF0JS0-unsplash.jpg" alt="Avatar" class="avatar">
+                            <div class="card-content">
+                                <h3><b>Foto 3</b></h3> 
+                                <button class="learn-more">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="site-footer">
+            <img src="assets/images/pexels-pixabay-68695.jpg" alt="" class="image-cover image-footer">
+            <div class="site-footer-content">
+                <a href="index.html" title="Il logo della lading page - torna in homepage">
+                    <img src="assets/images/logo_mountain_trips.png" alt="Il logo della mia landing page" class="site-logo-img">
+                </a>
+
+                <ul class="list-reset list-horizontal text-decoration-none">
+                    <li>
+                        <a href="#" title="Facebook"><span class="icon-border color-white icon-facebook"></span></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Instagram"><span class="icon-border color-white icon-instagram"></span></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Linkedin"><span class="icon-border color-white icon-linkedin"></span></a>
+                    </li>
+                </ul>
+
+                <div class="color-white text-decoration-none">
+                    <a href="#" class="color-black">Privacy</a>
+                    <a href="#" class="color-black"> Policy</a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
